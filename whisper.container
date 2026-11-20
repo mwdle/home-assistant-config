@@ -1,5 +1,5 @@
 [Container]
-Image=docker.io/rhasspy/wyoming-whisper:3.8.1@sha256:ba6fcb6056ebe237d15a325381763a80af2fc8fcedaa04f6a714a7375eb20d80
+Image=docker.io/rhasspy/wyoming-whisper:3.9.0@sha256:3cc01f646c8b149fe47b2a5e8bfaf31866e1bc18faffadb26c9b8be58cbe5703
 ContainerName=whisper
 
 PublishPort=127.0.0.1:10300:10300
