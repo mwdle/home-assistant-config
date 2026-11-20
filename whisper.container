@@ -18,10 +18,9 @@ DropCapability=all
 
 Exec=--model tiny-int8 --language en
 
-HealthStartupCmd=["/usr/src/.venv/bin/python3", "-m", "wyoming_faster_whisper.health_check"]
+HealthCmd=["/usr/src/.venv/bin/python3", "-m", "wyoming_faster_whisper.health_check"]
 HealthStartupInterval=5s
 HealthStartupTimeout=5s
-HealthCmd=["/usr/src/.venv/bin/python3", "-m", "wyoming_faster_whisper.health_check"]
 HealthInterval=30s
 HealthTimeout=20s
 HealthOnFailure=kill

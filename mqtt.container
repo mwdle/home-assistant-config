@@ -21,10 +21,9 @@ UserNS=auto
 NoNewPrivileges=true
 DropCapability=all
 
-HealthStartupCmd=mosquitto_sub -t check -C 1 -W 4 2>&1 | grep -q 'not authorised' || exit 1
+HealthCmd=mosquitto_sub -t check -C 1 -W 4 2>&1 | grep -q 'not authorised' || exit 1
 HealthStartupInterval=5s
 HealthStartupTimeout=5s
-HealthCmd=mosquitto_sub -t check -C 1 -W 4 2>&1 | grep -q 'not authorised' || exit 1
 HealthInterval=60s
 HealthTimeout=5s
 HealthOnFailure=kill
